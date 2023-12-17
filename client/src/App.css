@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+
+/* Root CSS */
+
+.App{
+  background-color:white;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Poppins', sans-serif;
+}
+
+.root-container-style{
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+/* Footer CSS */
+
+.footer-options{
+  color: #9897A0;
+  font-weight: 700;
+  font-size: 1.5vw;
+  margin-right: 2vw;
+}
+
+.footer-options:hover{
+  color: #FBF6EE;
+  cursor: pointer;
+}
+
+/* Banner CSS */
+
+.banner {
+  font-size:5vw;
+  background: radial-gradient(283px at 1.7% 8.6%, rgb(141, 254, 235) 0%, rgb(232, 176, 254) 90%);
+  background-clip: text; /* Standard syntax */
+  color: transparent; /* Standard syntax */
+  max-width: 90%;
+  font-weight: 700;
+  letter-spacing: 1vw;
+}
+
+.banner-subtext {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5vw;
+  margin-top: -2vh;
+  font-size: 1.5vw;
+
+  
+}
+
+/* Testpage CSS */
+
+.account-details{
+  color: white;
+  font-size: large;
+  max-width: 80%;
+  word-wrap: break-word;
+  white-space: pre-line;
+  
+}
+
+/* SDK CSS */
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Optional: Style the submit button */
+.meow {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 0.5vw;
+}
+
+.meow:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
