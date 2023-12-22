@@ -1,0 +1,17 @@
+[package]
+name = "token_basket"
+version = "1.0.0"
+authors = []
+
+[addresses]
+tokenbasket_addr='a6a027fca5e5e2f426fca74deda89b4530c48a908af7710fd8d36a550ab22cb9'
+aptos_std = '0000000000000000000000000000000000000000000000000000000000000001'
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
