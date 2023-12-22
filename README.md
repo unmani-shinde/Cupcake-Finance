@@ -39,26 +39,12 @@ Choose a Token Basket or create your own.
 Fund your basket with APT.
 Sit back and enjoy automatic rebalancing (if enabled).
 
-## Join the DeFi Revolution
-
-Make DeFi simple and accessible with Cupcake Finance. Visit our website at [website URL] to learn more and start building your personalized crypto portfolio today!
-
 ## Technical Details
 
-Smart Contracts: Solidity (Aptos compatible)
-Front-End: React (TypeScript)
-DEX Integration: LiquidSwap
+Smart Contracts: Move (Aptos compatible)
+Front-End: React
+DEX Integration: LiquidSwap AMM
 Oracle: Pythnet
 Keeper Network: Currently internal, ideally Chainlink integration for decentralization
 
-## Contributing
 
-We welcome contributions from the community! See our CONTRIBUTING.md file for details.
-
-## License
-
-Cupcake Finance is licensed under the MIT License: https://choosealicense.com/licenses/mit/: https://choosealicense.com/licenses/mit/.
-
-## Additional Information
-
-This README is a template and may need to be updated with specific details like website URL, technical stack versions, and contribution guidelines. Feel free to customize it to fit your needs!
