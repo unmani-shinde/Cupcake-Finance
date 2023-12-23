@@ -111,6 +111,13 @@ function App() {
     setMyBasket(baskets);
   };
 
+  const submitBasket2 = (a:number,b:number,c:number) => async () => {
+    const baskets = [...myBaskets];
+    baskets.push([a,b,c])
+    console.log(baskets)
+    setMyBasket(baskets);
+  }
+
   const fetchBasket = async () => {
     if (!account) return [];
     try {
@@ -312,7 +319,7 @@ function App() {
                     className="addBasket"
                       type="primary"
                       htmlType="submit"
-                      onClick={submitBasket}
+                      onClick={submitBasket2(30,56,14)}
                     >
                       + Add
                     </Button>
@@ -335,7 +342,7 @@ function App() {
                     className="addBasket"
                       type="primary"
                       htmlType="submit"
-                      onClick={submitBasket}
+                      onClick={submitBasket2(29,43,28)}
                     >
                       + Add
                     </Button>
@@ -357,7 +364,7 @@ function App() {
                     className="addBasket"
                       type="primary"
                       htmlType="submit"
-                      onClick={submitBasket}
+                      onClick={submitBasket2(36,39,25)}
                     >
                       + Add
                     </Button>
