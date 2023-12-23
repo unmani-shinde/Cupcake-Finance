@@ -429,11 +429,43 @@ Form .css-dev-only-do-not-override-sk7ap8 .ant-btn-primary:hover{
       transform: translatey(200%);
       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
       visibility: hidden;
+      margin-top:-1.8rem;
 
+      .cbn{
+        font-family:Poppins;
+        font-size:18px;
+      }
+    p{
+        font-size:10px;
+        text-align: center;
+        font-style: italic;
+        /* color:red; */
+      }
+    .addBasket{
+      margin-top:1rem;
+      width:100%;
+      background: #333D5E !important;
+  font-family: Poppins !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+    }
+    .addBasket:hover{
+      background:white !important;
+  color:#7764FC !important;
+  /* box-shadow: -5px 5px 10px 0px rgba(181, 172, 234, 0.81); */
+  transition: 0.8s ease-in-out;
+    }
+      .span-group{
+        display:flex;
+        width:100%;
+        align-items:center;
+        justify-content: space-between;
+      }
       span {
         display: block;
         margin-top: 5px;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
 
