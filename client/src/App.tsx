@@ -224,7 +224,7 @@ function App() {
                           BTC
                         </Radio.Button>
                         <Radio.Button onClick={selectAPT} value={3}>
-                          APT
+                          ETH
                         </Radio.Button>
                       </Radio.Group>
                       <Radio.Group>
@@ -273,7 +273,7 @@ function App() {
                           }
                           disabled={true}
                         />
-                        <Button onClick={submitAPTRatio}>Set APT Ratio</Button>
+                        <Button onClick={submitAPTRatio}>Set ETH Ratio</Button>
                       </Form.Item>
                     )}
 
@@ -298,20 +298,69 @@ function App() {
               <div className="container">
                 <div>
                   <div className="content">
-                    <h2>Jane Doe</h2>
-                    <span>UI & UX Designer</span>
+                    <h2 className="cbn">Basket 1</h2>
+                    <p>
+                      This basket is the perfect choice for long term investment
+                      to maximize the profits
+                    </p>
+                    <div className="span-group">
+                      <span>USDT: 30%</span>
+                      <span>BTC: 56%</span>
+                      <span>ETH: 14%</span>
+                    </div>
+                    <Button
+                    className="addBasket"
+                      type="primary"
+                      htmlType="submit"
+                      onClick={submitBasket}
+                    >
+                      + Add
+                    </Button>
                   </div>
                 </div>
                 <div>
                   <div className="content">
-                    <h2>Alex Smith</h2>
-                    <span>CEO Expert</span>
+                    <h2 className="cbn">Basket 2</h2>
+                    <p>
+                      Scared of taking risks? We've got your back! This basket
+                      is your go to choice for a safe investment with minimum
+                      risks
+                    </p>
+                    <div className="span-group">
+                      <span>USDT: 29%</span>
+                      <span>BTC: 43%</span>
+                      <span>ETH: 28%</span>
+                    </div>
+                    <Button
+                    className="addBasket"
+                      type="primary"
+                      htmlType="submit"
+                      onClick={submitBasket}
+                    >
+                      + Add
+                    </Button>
                   </div>
                 </div>
                 <div>
                   <div className="content">
-                    <h2>Emily New</h2>
-                    <span>Web Designer</span>
+                    <h2 className="cbn">Basket 3</h2>
+                    <p>
+                      Balance is the key to life. Diversify your protfolio with
+                      a tradeoff between low risks and high returns
+                    </p>
+                    <div className="span-group">
+                      <span>USDT: 36%</span>
+                      <span>BTC: 39%</span>
+                      <span>ETH: 25%</span>
+                    </div>
+                    <Button
+                    className="addBasket"
+                      type="primary"
+                      htmlType="submit"
+                      onClick={submitBasket}
+                    >
+                      + Add
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -322,7 +371,7 @@ function App() {
                 {myBaskets.map(function (object, i) {
                   return (
                     <div className="my-baskets-card">
-                      <h2>Basket {i+1}</h2>
+                      <h2>Basket {i + 1}</h2>
                       USDT:{object[0]}%<br />
                       BTC:{object[1]}%<br />
                       APT:{object[2]}%<br />
