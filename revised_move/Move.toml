@@ -1,0 +1,31 @@
+[package]
+name = "cupcake_finance"
+version = "1.0.0"
+authors = []
+
+[addresses]
+cupcake_addr = '0e3b7758bf1f1e7f7c90983ff893701a86a88eae8767b8457476962976778d26'
+
+[dev-addresses]
+
+[dependencies.LiquidswapRouterV2]
+git = 'https://github.com/pontem-network/liquidswap.git'
+subdir = 'liquidswap_router_v2/'
+rev = 'v0.4.4'
+
+[dependencies.LiquidswapLP]
+git = 'https://github.com/pontem-network/liquidswap.git'
+subdir = 'liquidswap_lp/'
+rev = 'v0.4.4'
+
+[dependencies.TestCoins]
+git = 'https://github.com/pontem-network/test-coins.git'
+rev = 'v0.1.1'
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
+
