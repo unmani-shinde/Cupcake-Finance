@@ -1,7 +1,7 @@
 
 
 import { Button, Checkbox, Label, Modal, TextInput,Radio,Table } from "flowbite-react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 // import SelectTokens from "./selectTokens";
 import { useWallet } from '@aptos-labs/wallet-adapter-react';
 // import { useNavigate } from 'react-router-dom';
@@ -15,8 +15,10 @@ function CreateInvestment() {
   const [investmentAmount, setInvestmentAmount] = useState(0);
   const [rebalanceInterval,setRebalanceInterval] = useState(0);
   const {connected,account,signAndSubmitTransaction} = useWallet();
+  const [basketCount,setBasketCount] = useState(-1);
+  const [tokenBaskets,setTokenBaskets] = useState([]);
 
-  const [selectAllChecked, setSelectAllChecked] = useState(false);
+ const [selectAllChecked, setSelectAllChecked] = useState(false);
   const [individualCheckboxStates, setIndividualCheckboxStates] = useState({
     apt: false,
     usdt: false,
@@ -33,6 +35,7 @@ function CreateInvestment() {
     btc: 0,
   });
 
+  
   // Function to handle header checkbox click
   const handleHeaderCheckboxClick = () => {
     setSelectAllChecked(prev => !prev);
@@ -129,8 +132,8 @@ function CreateInvestment() {
 
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>+ New Token Basket</Button>
-      <Modal show={openModal} size="md" onClose={onCloseModal} popup>
+      {basketCount!==-1 && <Button onClick={() => setOpenModal(true)}>+ New Token Basket</Button>}
+      {basketCount!==-1 && <Modal show={openModal} size="md" onClose={onCloseModal} popup>
         <Modal.Header />
         <Modal.Body>
           <div className="space-y-6">
@@ -288,7 +291,7 @@ function CreateInvestment() {
            
           </div>
         </Modal.Body>
-      </Modal>
+      </Modal>}
     </>
   );
 }

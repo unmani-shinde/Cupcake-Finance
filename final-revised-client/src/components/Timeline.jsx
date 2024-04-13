@@ -5,7 +5,7 @@ import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
 
 function ProfileTimeline() {
   return (
-    <Timeline className="w-100">
+    <Timeline className="w-88">
       <Timeline.Item>
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>
